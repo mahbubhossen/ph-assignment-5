@@ -8,6 +8,7 @@ let clear_button = document.getElementById("clear_history");
 
 let count = 6;
 let count_total = 23;
+let complete_task = 0;
 
 
 for (let i = 0; i < buttons.length; i++) {
@@ -16,12 +17,17 @@ for (let i = 0; i < buttons.length; i++) {
 
         count--;
         count_total++;
+        complete_task++;
 
         task_assign.innerText = count;
         total_assign.innerText = count_total;
 
         buttons[i].style.backgroundColor = "lightgray";
         buttons[i].disabled = true;
+
+        if(complete_task === buttons.length){
+            alert("congrates !! you have complete all current task");
+        }
 
         // activity part
 
