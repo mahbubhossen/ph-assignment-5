@@ -29,11 +29,14 @@ for (let i = 0; i < buttons.length; i++) {
             alert("congrates !! you have complete all current task");
         }
 
-        // activity part
+        
 
+        // activity part
+        
+        let parentDiv = this.parentElement.parentElement.parentElement;
+        let taskTitle = parentDiv.querySelector("h1").innerText;
         
         let newText = document.createElement("div");
-        
         
 
             // real time
@@ -47,7 +50,7 @@ for (let i = 0; i < buttons.length; i++) {
                 return formattedTime;
             }
 
-            newText.innerHTML = `You have completed the task:<br><small>Time: ${getCurrentTime()}</small>`;
+            newText.innerHTML = ` You have completed the task: <b>${taskTitle}</b><br><small>Time: ${getCurrentTime()}</small>`;
 
             newText.style.backgroundColor = "#F4F7FF";
             newText.style.borderRadius = "15px";
@@ -57,6 +60,8 @@ for (let i = 0; i < buttons.length; i++) {
             newText.style.marginTop = "10px";
 
             activity_part.appendChild(newText);
+
+            
         
     });
    
