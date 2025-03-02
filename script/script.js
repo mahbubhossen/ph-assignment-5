@@ -3,16 +3,12 @@ let task_assign = document.getElementById("task_assign");
 let total_assign = document.getElementById("total_assign");
 let activity_part = document.getElementById("activity_part");
 let clear_button = document.getElementById("clear_history");
-const get_value = document.getElementById("title").innerHTML;
 
-const get_all_title = document.getElementsByClassName("title").namedItem;
-console.log(get_value)
 
 
 let count = 6;
 let count_total = 23;
 
-console.log("log", get_value)
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
@@ -28,13 +24,11 @@ for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
 
         // activity part
+
+        
         let newText = document.createElement("div");
-        let divElement = buttons[i].parentElement;  
-        // let targetDiv = divElement.nextElementSibling;
-        let firstSibling = divElement.nextElementSibling;
-        let secondSibling = firstSibling.nextElementSibling;
-        let taskTitle = secondSibling.querySelector("h1");  
-        if (taskTitle) {  
+        
+        
 
             // real time
             function getCurrentTime() {
@@ -47,7 +41,7 @@ for (let i = 0; i < buttons.length; i++) {
                 return formattedTime;
             }
 
-            newText.innerHTML = `You have completed the task: <strong>${taskTitle.innerText}</strong><br><small>Time: ${getCurrentTime()}</small>`;
+            newText.innerHTML = `You have completed the task:<br><small>Time: ${getCurrentTime()}</small>`;
 
             newText.style.backgroundColor = "#F4F7FF";
             newText.style.borderRadius = "15px";
@@ -57,10 +51,9 @@ for (let i = 0; i < buttons.length; i++) {
             newText.style.marginTop = "10px";
 
             activity_part.appendChild(newText);
-        } else {
-            console.log('Task title not found!');
-        }
+        
     });
+   
 }
 
 clear_button.addEventListener("click", function () {
