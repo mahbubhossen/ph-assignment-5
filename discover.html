@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- daisy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+
+    
+    <section class="  mx-36   pb-6">
+
+        <!-- navbar section -->
+     <section class="pt-6 pb-6">
+        <nav class="bg-white shadow-sm p-4 flex justify-between items-center rounded-md ">
+            
+            
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.png" alt="" class="w-12 h-12">
+                <span class="text-3xl ">Dev<span class="font-bold">Board</span></span>
+            </div>
+            
+        
+            <div  class="flex space-x-6 items-center">
+                
+                <button id="back_button"  class=" p-2 bg-[#3752FD] rounded-md text-white">Back to desk</button>
+              </div>
+        </nav>
+        
+    </section>
+
+    <!-- question section -->
+
+    <h1 class="text-center font-bold text-3xl pb-4">Blog</h1>
+    <section class="my-5  rounded-md mb-6">
+
+        <div>
+            <!-- 01 -->
+        <div class="bg-white p-3 !mb-4 rounded-md">
+            <h1 class="font-bold text-3xl mb-3">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-t-2 border-gray-400 mt-4 mb-4">
+            <p class="text-xl"> Ans: <br>  Element select korar onek upay ache: <br>
+                1. getElementById() : id er maddhome select kora jay. <br>
+                2.getElementsByClassName() : ekti class select kore kaj kora jay. <br>
+                3. getElementsByTagName() : tag er maddhome element  select kora jay. <br>
+                4. querySelector() <br>
+                5. querySelectorAll(). <br>
+            </p>
+        </div>
+            <!-- 02 -->
+        <div class="bg-white p-3 !mb-4 rounded-md">
+            <h1 class="font-bold text-3xl mb-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-t-2 border-gray-400 mt-4 mb-4">
+            <p class="text-xl"> 
+                Ans : <br>
+                innerHTML :  html markup soho content dey. <br>
+                innerText : sudhu text content dey.  <br>
+                textContent : etao same text contect dey. but eita ekto druto hoy.  <br>
+            </p>
+        </div>
+            <!-- 03 -->
+        <div class="bg-white p-3 !mb-4 rounded-md">
+            <h1 class="font-bold text-3xl mb-3">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-t-2 border-gray-400 mt-4 mb-4">
+            <p class="text-xl"> Ans: <br>
+                event delegation holo emon ekti tecnic jar maddhome parent element e matro ekti event listener add kora hoy . <br>
+                eti code er performance baray. <br>
+                new element add korleo alada event atach kora lage na <br>
+            </p>
+        </div>
+            <!-- 04 -->
+        <div class="bg-white p-3 !mb-4 rounded-md">
+            <h1 class="font-bold text-3xl mb-3">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-t-2 border-gray-400 mt-4 mb-4">
+            <p class="text-xl"> Ans: <br>
+                event bubbling holo jokhon kono ekta trigger hoy tokhon ta target element theke parent element er dike jay . <br>
+                parent element sei event accept kore . <br>
+                eti dom tree er moto kaj kore . <br>
+            </p>
+        </div>
+            <!-- 05 -->
+        <div class="bg-white p-3 !mb-4 rounded-md">
+            <h1 class="font-bold text-3xl mb-3">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-t-2 border-gray-400 mt-4 mb-4">
+            <p class="text-xl"> Ans: <br> 
+                create : document.createElement; <br>
+                add : appendChild() <br>
+                remove : removeChild() <br>
+            </p>
+        </div>
+        </div>
+    </section>
+    </section>
+     
+    <!-- <script src="script/script.js"></script> -->
+     <script src="script/back.js"></script>
+</body>
+</html>
